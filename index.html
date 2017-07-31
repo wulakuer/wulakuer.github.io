@@ -44,7 +44,7 @@
 				<h1 class="site-name"><a href="/" title="Vivian&#39;s blog">Vivian&#39;s blog</a></h1>
 				<h2 class="blog-motto"></h2>
 			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
 			</a></div>
 			<nav class="animated">
 				<ul>
@@ -60,7 +60,7 @@
  					
 					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
 						<label>Search</label>
-						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
 						<input type="hidden" name="q" value="site:yoursite.com">
 					</form>
 					
@@ -78,6 +78,83 @@
         <header class="article-info clearfix">
   <h1 itemprop="name">
     
+      <a href="/2017/07/31/响应式布局20170731/" title="" itemprop="url"></a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="vivian" target="_blank" itemprop="author">vivian</a>
+		
+  <p class="article-time">
+    <time datetime="2017-07-31T15:25:17.398Z" itemprop="datePublished"> 发表于 2017-07-31</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <h1 id="响应式布局-20170731"><a href="#响应式布局-20170731" class="headerlink" title="响应式布局 20170731"></a>响应式布局 20170731</h1><h2 id="1-What-did-I-do？"><a href="#1-What-did-I-do？" class="headerlink" title="1. What did I do？"></a>1. What did I do？</h2><ul>
+<li>A. 媒体查询</li>
+</ul>
+<blockquote>
+<p>@media screen and (min-width: 200) and (max-width: 600px)</p>
+<p>{    </p>
+<p>​    body {</p>
+<p>​        background-color: red;</p>
+<p>​    }</p>
+<p>}</p>
+</blockquote>
+<ul>
+<li>B. 断点</li>
+</ul>
+<blockquote>
+<p>我的理解：页面响应并变化的一个点就是一个断点</p>
+</blockquote>
+<h2 id="2-Problem-Met"><a href="#2-Problem-Met" class="headerlink" title="2. Problem Met"></a>2. Problem Met</h2><ul>
+<li><p>A. 无法显示我设定的媒体查询中规定的body的background样式</p>
+<p>因为直接从Dev tools中复制的code，其中包含很多自动生成的code，其中有一个background(!important)，我自己定制的样式被他覆盖了。</p>
+</li>
+</ul>
+<ul>
+<li><p>B. Chrome浏览器无法缩小窗口到500px以下</p>
+<p>​    原因：多个tab页打开时，chrome会有最小宽度，之后就算单独打开要操作的页面，也会受其影响。</p>
+<p>​        解决： 重新单独打开要操作的页面，如果不行，多试几次。</p>
+</li>
+</ul>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
       <a href="/2017/07/28/Bootstrap 布局20170728 /" title="" itemprop="url"></a>
   </h1>
   <p class="article-author">By
@@ -85,7 +162,7 @@
 		<a href="/about" title="vivian" target="_blank" itemprop="author">vivian</a>
 		
   <p class="article-time">
-    <time datetime="2017-07-28T14:56:43.276Z" itemprop="datePublished"> Published 2017-07-28</time>
+    <time datetime="2017-07-28T14:56:43.276Z" itemprop="datePublished"> 发表于 2017-07-28</time>
     
   </p>
 </header>
@@ -120,7 +197,7 @@
 <p>菜鸟</p>
 <p>W3School</p>
 </blockquote>
-<h1 id="What-did-I-do-today"><a href="#What-did-I-do-today" class="headerlink" title="What did I do today?"></a>What did I do today?</h1><ol>
+<h2 id="What-did-I-do-today"><a href="#What-did-I-do-today" class="headerlink" title="What did I do today?"></a>What did I do today?</h2><ol>
 <li><p>解决了hexo在本地可以更新，但是无法在github上远端更新的问题。</p>
 </li>
 <li><p>研究多设备同步使用hexo(not finish)</p>
@@ -128,9 +205,11 @@
 <li><p>CSS语法</p>
 </li>
 <li><p>bootstrap网格系统</p>
-<p>​</p>
-</li>
+<h2 id="What-did-I-think"><a href="#What-did-I-think" class="headerlink" title="What did I think?"></a>What did I think?</h2></li>
 </ol>
+<p>做程序员要有思维上的转变，trouble shooting， 定位出错点，排查跟出错点相关的东西以求得解决方案。</p>
+<p>例如，今天hexo deploy一直不成功的问题，跟deploy相关的有配置文件，还有生成的.deploy_git文件夹。deploy没有报错，远端网站却一直没有更新，这说明可能是之前生成的文件没有得到强制的更新。</p>
+<p>例如，在公司研究多设备同步的时候，hexo一直安装不成功，没有报错，只有warning, 敲的命令没问题，而且在家中的电脑也是成功过的。那就可能是node.js npm需要更新了，更新之后再删除之前执行命令时生成的问题。或者干脆重新安装node.js npm。（该问题还未解决，很好奇到底会是因为什么原因。）</p>
 
         
         
@@ -174,7 +253,7 @@
 		<a href="/about" title="vivian" target="_blank" itemprop="author">vivian</a>
 		
   <p class="article-time">
-    <time datetime="2017-07-27T14:41:19.000Z" itemprop="datePublished"> Published 2017-07-27</time>
+    <time datetime="2017-07-27T14:41:19.000Z" itemprop="datePublished"> 发表于 2017-07-27</time>
     
   </p>
 </header>
@@ -245,7 +324,7 @@
 		<a href="/about" title="vivian" target="_blank" itemprop="author">vivian</a>
 		
   <p class="article-time">
-    <time datetime="2017-07-27T13:12:55.597Z" itemprop="datePublished"> Published 2017-07-27</time>
+    <time datetime="2017-07-27T13:12:55.597Z" itemprop="datePublished"> 发表于 2017-07-27</time>
     
   </p>
 </header>
@@ -292,10 +371,10 @@
 
 
 </div>
-      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
 
 <div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
 <aside class="clearfix">
 
   
@@ -305,7 +384,7 @@
 
   
 <div class="tagslist">
-	<p class="asidetitle">Tags</p>
+	<p class="asidetitle">标签</p>
 		<ul class="clearfix">
 		
 			
@@ -317,7 +396,7 @@
 
 
   <div class="linkslist">
-  <p class="asidetitle">Links</p>
+  <p class="asidetitle">友情链接</p>
     <ul>
         
           <li>
@@ -339,11 +418,11 @@
 
 
   <div class="rsspart">
-	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
 </div>
 
   <div class="weiboshow">
-  <p class="asidetitle">Weibo</p>
+  <p class="asidetitle">新浪微博</p>
     <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=null&verifier=b3593ceb&dpc=1"></iframe>
 </div>
 
@@ -493,7 +572,7 @@ var _hmt = _hmt || [];
 <!-- Totop Begin -->
 
 	<div id="totop">
-	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
 	</div>
 	<script src="/js/totop.js"></script>
 
